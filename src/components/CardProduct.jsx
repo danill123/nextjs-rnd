@@ -21,7 +21,7 @@ export default function CardProduct(props) {
     <Card sx={{ minWidth: 275 }}>
       <CardContent>
         <div style={{ position: 'relative', maxWidth: '100%' }}>
-            <Image width={10000} height={200} style={{ maxWidth: '100%', objectFit: 'contain' }} src={props?.imageSrc} />
+            <Image width={10000} alt="product image" height={200} style={{ maxWidth: '100%', objectFit: 'contain' }} src={props?.imageSrc} />
         </div>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           {props?.title}
