@@ -23,7 +23,7 @@ export default function Home(props) {
       <Grid container spacing={2}>
         {props?.data?.map( item =>   
           <Grid key={item?.id} item xs={12} sm={6} md={3}>
-            <CardProduct imageSrc={item?.image} title={item?.title} />
+            <CardProduct id={item?.id} imageSrc={item?.image} title={item?.title} />
           </Grid>
         )}
       </Grid>

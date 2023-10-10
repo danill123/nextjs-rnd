@@ -6,6 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Image from 'next/image';
+import Router from 'next/router';
 
 const bull = (
   <Box
@@ -39,7 +40,7 @@ export default function CardProduct(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Learn More</Button>
+        <Button size="small" onClick={() => Router.push(`/product/${props?.id}`)}>Detail</Button>
       </CardActions>
     </Card>
   );
